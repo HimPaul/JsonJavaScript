@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Parsing</title>
+</head>
+<body>
+    Go To console To underStand the Json Parsing
+    <div class="conatiner">
+        <script>
+            let jsonObj = {
+                name : "himadri",
+                hobby : "coding",
+                movie : "3 Idiots",
+                sports : "FootBall"
+            }
+            console.log(jsonObj);
+            let mystr = JSON.stringify(jsonObj);
+            console.log(mystr);
+
+            mystr = mystr.replace('coding', 'cooking');
+            console.log(mystr);
+            mystr = mystr.toUpperCase('himadri');
+            console.log(mystr);
+
+            newJsonObj = JSON.parse(mystr);
+            console.log(newJsonObj);
+
+
+            
+        </script>
+    </div>
+</body>
+</html>
